@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		DFE3F7DC1A033EB3004DC174 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE3F7DB1A033EB3004DC174 /* main.m */; };
+		DFE3F7EA1A033EF2004DC174 /* SCKLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE3F7E51A033EF2004DC174 /* SCKLoginRequest.m */; };
+		DFE3F7EB1A033EF2004DC174 /* SCKMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE3F7E71A033EF2004DC174 /* SCKMessage.m */; };
+		DFE3F7EC1A033EF2004DC174 /* SCKStream.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE3F7E91A033EF2004DC174 /* SCKStream.m */; };
+		DFE3F7FD1A033F10004DC174 /* DDArrayQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE3F7EF1A033F10004DC174 /* DDArrayQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DFE3F7FE1A033F10004DC174 /* DDCometClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE3F7F11A033F10004DC174 /* DDCometClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DFE3F7FF1A033F10004DC174 /* DDCometLongPollingTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE3F7F31A033F10004DC174 /* DDCometLongPollingTransport.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DFE3F8001A033F10004DC174 /* DDCometMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE3F7F51A033F10004DC174 /* DDCometMessage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DFE3F8011A033F10004DC174 /* DDCometSubscription.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE3F7F71A033F10004DC174 /* DDCometSubscription.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DFE3F8021A033F10004DC174 /* DDConcurrentQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE3F7F91A033F10004DC174 /* DDConcurrentQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DFE3F8031A033F10004DC174 /* DDQueueProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE3F7FC1A033F10004DC174 /* DDQueueProcessor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DFE3F8061A033F93004DC174 /* SCKDemoBot.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE3F8051A033F93004DC174 /* SCKDemoBot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +36,30 @@
 /* Begin PBXFileReference section */
 		DFE3F7D81A033EB3004DC174 /* socchatkitdemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = socchatkitdemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE3F7DB1A033EB3004DC174 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DFE3F7E31A033EF2004DC174 /* SCKDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCKDefinitions.h; sourceTree = "<group>"; };
+		DFE3F7E41A033EF2004DC174 /* SCKLoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCKLoginRequest.h; sourceTree = "<group>"; };
+		DFE3F7E51A033EF2004DC174 /* SCKLoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCKLoginRequest.m; sourceTree = "<group>"; };
+		DFE3F7E61A033EF2004DC174 /* SCKMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCKMessage.h; sourceTree = "<group>"; };
+		DFE3F7E71A033EF2004DC174 /* SCKMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCKMessage.m; sourceTree = "<group>"; };
+		DFE3F7E81A033EF2004DC174 /* SCKStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCKStream.h; sourceTree = "<group>"; };
+		DFE3F7E91A033EF2004DC174 /* SCKStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCKStream.m; sourceTree = "<group>"; };
+		DFE3F7EE1A033F10004DC174 /* DDArrayQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDArrayQueue.h; sourceTree = "<group>"; };
+		DFE3F7EF1A033F10004DC174 /* DDArrayQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDArrayQueue.m; sourceTree = "<group>"; };
+		DFE3F7F01A033F10004DC174 /* DDCometClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCometClient.h; sourceTree = "<group>"; };
+		DFE3F7F11A033F10004DC174 /* DDCometClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDCometClient.m; sourceTree = "<group>"; };
+		DFE3F7F21A033F10004DC174 /* DDCometLongPollingTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCometLongPollingTransport.h; sourceTree = "<group>"; };
+		DFE3F7F31A033F10004DC174 /* DDCometLongPollingTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDCometLongPollingTransport.m; sourceTree = "<group>"; };
+		DFE3F7F41A033F10004DC174 /* DDCometMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCometMessage.h; sourceTree = "<group>"; };
+		DFE3F7F51A033F10004DC174 /* DDCometMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDCometMessage.m; sourceTree = "<group>"; };
+		DFE3F7F61A033F10004DC174 /* DDCometSubscription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCometSubscription.h; sourceTree = "<group>"; };
+		DFE3F7F71A033F10004DC174 /* DDCometSubscription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDCometSubscription.m; sourceTree = "<group>"; };
+		DFE3F7F81A033F10004DC174 /* DDConcurrentQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDConcurrentQueue.h; sourceTree = "<group>"; };
+		DFE3F7F91A033F10004DC174 /* DDConcurrentQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDConcurrentQueue.m; sourceTree = "<group>"; };
+		DFE3F7FA1A033F10004DC174 /* DDQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDQueue.h; sourceTree = "<group>"; };
+		DFE3F7FB1A033F10004DC174 /* DDQueueProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDQueueProcessor.h; sourceTree = "<group>"; };
+		DFE3F7FC1A033F10004DC174 /* DDQueueProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDQueueProcessor.m; sourceTree = "<group>"; };
+		DFE3F8041A033F93004DC174 /* SCKDemoBot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCKDemoBot.h; sourceTree = "<group>"; };
+		DFE3F8051A033F93004DC174 /* SCKDemoBot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCKDemoBot.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +76,8 @@
 		DFE3F7CF1A033EB3004DC174 = {
 			isa = PBXGroup;
 			children = (
+				DFE3F7ED1A033F10004DC174 /* DDComet */,
+				DFE3F7E21A033ED8004DC174 /* SocChatKit */,
 				DFE3F7DA1A033EB3004DC174 /* socchatkitdemo */,
 				DFE3F7D91A033EB3004DC174 /* Products */,
 			);
@@ -57,9 +94,48 @@
 		DFE3F7DA1A033EB3004DC174 /* socchatkitdemo */ = {
 			isa = PBXGroup;
 			children = (
+				DFE3F8041A033F93004DC174 /* SCKDemoBot.h */,
+				DFE3F8051A033F93004DC174 /* SCKDemoBot.m */,
 				DFE3F7DB1A033EB3004DC174 /* main.m */,
 			);
 			path = socchatkitdemo;
+			sourceTree = "<group>";
+		};
+		DFE3F7E21A033ED8004DC174 /* SocChatKit */ = {
+			isa = PBXGroup;
+			children = (
+				DFE3F7E31A033EF2004DC174 /* SCKDefinitions.h */,
+				DFE3F7E41A033EF2004DC174 /* SCKLoginRequest.h */,
+				DFE3F7E51A033EF2004DC174 /* SCKLoginRequest.m */,
+				DFE3F7E61A033EF2004DC174 /* SCKMessage.h */,
+				DFE3F7E71A033EF2004DC174 /* SCKMessage.m */,
+				DFE3F7E81A033EF2004DC174 /* SCKStream.h */,
+				DFE3F7E91A033EF2004DC174 /* SCKStream.m */,
+			);
+			path = SocChatKit;
+			sourceTree = "<group>";
+		};
+		DFE3F7ED1A033F10004DC174 /* DDComet */ = {
+			isa = PBXGroup;
+			children = (
+				DFE3F7EE1A033F10004DC174 /* DDArrayQueue.h */,
+				DFE3F7EF1A033F10004DC174 /* DDArrayQueue.m */,
+				DFE3F7F01A033F10004DC174 /* DDCometClient.h */,
+				DFE3F7F11A033F10004DC174 /* DDCometClient.m */,
+				DFE3F7F21A033F10004DC174 /* DDCometLongPollingTransport.h */,
+				DFE3F7F31A033F10004DC174 /* DDCometLongPollingTransport.m */,
+				DFE3F7F41A033F10004DC174 /* DDCometMessage.h */,
+				DFE3F7F51A033F10004DC174 /* DDCometMessage.m */,
+				DFE3F7F61A033F10004DC174 /* DDCometSubscription.h */,
+				DFE3F7F71A033F10004DC174 /* DDCometSubscription.m */,
+				DFE3F7F81A033F10004DC174 /* DDConcurrentQueue.h */,
+				DFE3F7F91A033F10004DC174 /* DDConcurrentQueue.m */,
+				DFE3F7FA1A033F10004DC174 /* DDQueue.h */,
+				DFE3F7FB1A033F10004DC174 /* DDQueueProcessor.h */,
+				DFE3F7FC1A033F10004DC174 /* DDQueueProcessor.m */,
+			);
+			name = DDComet;
+			path = cometclient/DDComet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +194,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFE3F8031A033F10004DC174 /* DDQueueProcessor.m in Sources */,
+				DFE3F8001A033F10004DC174 /* DDCometMessage.m in Sources */,
 				DFE3F7DC1A033EB3004DC174 /* main.m in Sources */,
+				DFE3F7FE1A033F10004DC174 /* DDCometClient.m in Sources */,
+				DFE3F8011A033F10004DC174 /* DDCometSubscription.m in Sources */,
+				DFE3F7FF1A033F10004DC174 /* DDCometLongPollingTransport.m in Sources */,
+				DFE3F8061A033F93004DC174 /* SCKDemoBot.m in Sources */,
+				DFE3F7FD1A033F10004DC174 /* DDArrayQueue.m in Sources */,
+				DFE3F8021A033F10004DC174 /* DDConcurrentQueue.m in Sources */,
+				DFE3F7EB1A033EF2004DC174 /* SCKMessage.m in Sources */,
+				DFE3F7EA1A033EF2004DC174 /* SCKLoginRequest.m in Sources */,
+				DFE3F7EC1A033EF2004DC174 /* SCKStream.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
