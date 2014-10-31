@@ -55,6 +55,11 @@
     NSLog(@"%s: %@", __PRETTY_FUNCTION__, stream);
 }
 
+- (void)stream:(SCKStream *)stream failedToConnectWithError:(NSError *)error
+{
+    NSLog(@"%s: %@", __PRETTY_FUNCTION__, error);
+}
+
 - (void)stream:(SCKStream *)stream receivedMessage:(SCKMessage *)message
 {
     NSLog(@"%s: %@", __PRETTY_FUNCTION__, message);

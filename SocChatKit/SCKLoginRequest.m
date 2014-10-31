@@ -57,8 +57,21 @@
     
     NSLog(@"Login Headers: %@", httpResponse.allHeaderFields);
     
-    NSArray *cookies = [NSHTTPCookie cookiesWithResponseHeaderFields:[httpResponse allHeaderFields] forURL:response.URL];
-    [self.delegate loginRequest:self receivedCookies:cookies];
+    switch(httpResponse.statusCode)
+    {
+        case 200:
+        {
+            NSArray *cookies = [NSHTTPCookie cookiesWithResponseHeaderFields:[httpResponse allHeaderFields] forURL:response.URL];
+            [self.delegate loginRequest:self receivedCookies:cookies];
+            break;
+        }
+            
+        case 401: // Unauthorized - check API token or room id
+        default:
+            [self.delegate loginRequest:self failedWithError:[NSError errorWithDomain:@"SCKLoginRequest" code:httpResponse.statusCode userInfo:httpResponse.allHeaderFields]];
+            break;
+    }
+    
 }
 
 @end

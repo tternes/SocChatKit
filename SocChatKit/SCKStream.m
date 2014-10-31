@@ -13,20 +13,38 @@
 
 #import "DDCometClient.h"
 #import "DDCometMessage.h"
+#import "DDCometSubscription.h"
 
 @interface SCKStream () <SCKLoginRequestDelegate, DDCometClientDelegate>
 @property (nonatomic, strong) SCKLoginRequest *loginRequest;
 @property (nonatomic, strong) DDCometClient *client;
+
+@property (nonatomic, strong) NSString *streamRoomId;
 @end
 
 
 
 @implementation SCKStream
 
+- (void)dealloc
+{
+    self.loginRequest.delegate = nil;
+    self.loginRequest = nil;
+
+    self.client.delegate = nil;
+    [self.client disconnect];
+    self.client = nil;
+    
+    self.streamRoomId = nil;
+}
+
+#pragma mark - Public
+
 - (void)connectWithToken:(NSString *)apiToken toRoom:(NSString *)roomId
 {
     self.loginRequest = [[SCKLoginRequest alloc] init];
     self.loginRequest.delegate = self;
+    self.streamRoomId = roomId;
     [self.loginRequest loginWithToken:apiToken forRoom:roomId];
 }
 
@@ -67,7 +85,7 @@
 {
     if(self.loginRequest == request)
     {
-        
+        [self.delegate stream:self failedToConnectWithError:error];
         self.loginRequest = nil;
     }
 }
@@ -95,6 +113,11 @@
 - (void)cometClient:(DDCometClient *)client subscriptionDidSucceed:(DDCometSubscription *)subscription
 {
     NSLog(@"%s: %@", __PRETTY_FUNCTION__, subscription);
+    
+    if([subscription matchesChannel:kSococoChatStream])
+    {
+        [self.delegate stream:self connectedToRoom:self.streamRoomId];
+    }
 }
 - (void)cometClient:(DDCometClient *)client subscription:(DDCometSubscription *)subscription didFailWithError:(NSError *)error
 {

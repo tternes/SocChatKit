@@ -24,13 +24,16 @@
 
 @end
 
-#pragma mark -
+#pragma mark - SCKStreamEventDelegate
 
 @protocol SCKStreamEventDelegate <NSObject>
 
 @optional
+
 - (void)stream:(SCKStream *)stream connectedToRoom:(NSString *)roomId;
 - (void)streamDisconnected:(SCKStream *)stream;
+- (void)stream:(SCKStream *)stream failedToConnectWithError:(NSError *)error;
 
+#pragma mark -
 - (void)stream:(SCKStream *)stream receivedMessage:(SCKMessage *)message;
 @end
