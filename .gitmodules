@@ -1,0 +1,3 @@
+[submodule "cometclient"]
+	path = cometclient
+	url = https://github.com/tternes/cometclient.git
