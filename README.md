@@ -5,7 +5,7 @@ An Objective-C library for connecting to [Sococo's streaming chat API](http://de
 
 ## Dependencies
 * Tested on Xcode 6.1, uses ARC (except for DDComet)
-* [tternes/cometclient](https://github.com/tternes/SocChatKit) - fork of the DDComet library with added support for cookies and relaxed polling
+* [tternes/cometclient](https://github.com/tternes/cometclient) - fork of the DDComet library with added support for cookies and relaxed polling
 * [Sococo API Token](http://developer.sococo.com/pages/generating-an-api-token.html) - API token from the Sococo Console
 * [Room Code](http://developer.sococo.com/pages/authentication.html) - code used to specify which room your API client will be placed in
 
